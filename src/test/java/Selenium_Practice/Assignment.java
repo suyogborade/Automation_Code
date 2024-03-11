@@ -22,7 +22,8 @@ public class Assignment {
 		
 		//Mobile 1
 		driver.findElement(By.xpath("//a[contains(text(),'Samsung galaxy s6')]")).click();
-		driver.findElement(By.xpath("//a[contains(@class,'btn')]")).click();
+		WebElement click =driver.findElement(By.xpath("//a[contains(@class,'btn')]"));
+		click.click();
 		
 		Alert alt = wait.until(ExpectedConditions.alertIsPresent());
 		alt.accept();
@@ -31,8 +32,9 @@ public class Assignment {
 		driver.findElement(By.cssSelector("a#nava")).click();
 		
 		//Mobile 2
-		driver.findElement(By.xpath("//a[contains(text(),'Iphone 6')]")).click();
-		driver.findElement(By.xpath("//a[contains(@class,'btn')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Iphone 6')]")).click(); 
+		click.click();
+		//driver.findElement(By.xpath("//a[contains(@class,'btn')]")).click();
 		wait.until(ExpectedConditions.alertIsPresent());
 		alt.accept();
 		
@@ -40,8 +42,9 @@ public class Assignment {
 		
 		//Mobile 3
 		driver.findElement(By.xpath("//a[contains(text(),'Nexus ')]")).click();
-		driver.findElement(By.xpath("//a[contains(@class,'btn')]")).click();
-		wait.until(ExpectedConditions.alertIsPresent());
+		click.click();
+		//driver.findElement(By.xpath("//a[contains(@class,'btn')]")).click(); 
+		//wait.until(ExpectedConditions.alertIsPresent());
 		alt.accept();
 		
 		driver.findElement(By.cssSelector("a#nava")).click();
