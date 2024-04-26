@@ -27,31 +27,31 @@ public class HandleCheckboxes {
 		System.out.println("Total number of checkboxes: " + checkboxes.size());
 
 		// Select all checkboxes
-		
-		  for(int i=0; i<checkboxes.size(); i++){ checkboxes.get(i).click();
-		  System.out.println(i); }
-		  
-		// for each loop 
-		  for(WebElement chkbox : checkboxes) { chkbox.click(); }
-		 
 
-		/* for (int i = 4; i < checkboxes.size(); i++) {
+		for (int i = 0; i < checkboxes.size(); i++) {
 			checkboxes.get(i).click();
+			System.out.println(i);
 		}
 
-		for (int i = 0; i < 2; i++) {
-			checkboxes.get(i).click();
+		// for each loop
+		for (WebElement chkbox : checkboxes) {
+			chkbox.click();
 		}
-		*/
+
+		/*
+		 * for (int i = 4; i < checkboxes.size(); i++) { checkboxes.get(i).click(); }
+		 * 
+		 * for (int i = 0; i < 2; i++) { checkboxes.get(i).click(); }
+		 */
 //		for (int i= 0; i < checkboxes.size(); i++) {
 //
 //			if (i > 4) {
 //				checkboxes.get(i).click();
 //			}
 //		} 
-		
-		for(WebElement chkbox : checkboxes) {
-			if(chkbox.isSelected()) {
+
+		for (WebElement chkbox : checkboxes) {
+			if (chkbox.isSelected()) {
 				chkbox.click();
 			}
 		}

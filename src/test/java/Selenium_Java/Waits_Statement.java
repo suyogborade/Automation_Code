@@ -12,15 +12,13 @@ public class Waits_Statement {
 		WebDriver driver = new ChromeDriver();
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://opensource-demo.orangehrmlive.com/");                                                                     
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().window().maximize();
-		
+
 		driver.findElement(By.name("username")).sendKeys("Admin");
-		
+
 		driver.findElement(By.name("password")).sendKeys("admin123");
-		
-		
-		
+
 	}
 
 }
