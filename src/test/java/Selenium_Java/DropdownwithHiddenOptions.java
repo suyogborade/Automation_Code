@@ -24,21 +24,19 @@ public class DropdownwithHiddenOptions {
 		driver.findElement(By.cssSelector(".oxd-form-actions")).submit();
 
 		driver.findElement(By.xpath("//span[text()='PIM']")).click();
-		
+
 		driver.findElement(By.xpath("(//i[contains(@class, oxd-select-text--arrow)])[10]")).click();
-		
-		List<WebElement>  options = driver.findElements(By.xpath("//div[@role='listbox']//span"));
-	
-		for(WebElement op : options) 
-		{
-			if(op.getText().equals("QA Engineer")) {
+
+		List<WebElement> options = driver.findElements(By.xpath("//div[@role='listbox']//span"));
+
+		for (WebElement op : options) {
+			if (op.getText().equals("QA Engineer")) {
 				op.click();
 				break;
 			}
 			System.out.println(op.getText());
 		}
-	
+
 	}
-	
 
 }

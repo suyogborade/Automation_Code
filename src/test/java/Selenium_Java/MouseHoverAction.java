@@ -9,16 +9,16 @@ import org.openqa.selenium.WebElement;
 public class MouseHoverAction {
 
 	public static void main(String[] args) {
-		
+
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.opencart.com/");
 		driver.manage().window().maximize();
-		
+
 		WebElement desktop = driver.findElement(By.xpath("//a[normalize-space()='Desktops']"));
 		WebElement mac = driver.findElement(By.xpath("//a[normalize-space()='Mac (1)']"));
-		
+
 		Actions act = new Actions(driver);
-		
+
 		act.moveToElement(desktop).moveToElement(mac).click().build().perform();
 	}
 

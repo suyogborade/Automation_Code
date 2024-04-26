@@ -16,9 +16,10 @@ import com.mailosaur.models.Message;
 import com.mailosaur.models.MessageSearchParams;
 import com.mailosaur.models.SearchCriteria;
 
-public class Conscent_Login {
+public class Conscent_Login 
+{
 
-public WebDriver driver;
+	public WebDriver driver;
 	
 	String apiKey = "7oAyjg5N1XdpoKYcogMlTNqCdfmfGLGA";
     String serverId = "efc7ir5t";
@@ -33,8 +34,7 @@ public WebDriver driver;
     public void testMail() throws IOException, MailosaurException, InterruptedException 
     {
     	String emailId = getRandomMail();
-    	
-    	
+    
     	driver = new ChromeDriver();
     	driver.manage().window().maximize();
         WebDriverWait newWait = new WebDriverWait(driver, java.time.Duration.ofSeconds(60));

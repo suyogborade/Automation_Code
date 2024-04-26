@@ -13,23 +13,23 @@ public class Explicit_Wait {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
-		
-		driver.navigate().to("https://opensource-demo.orangehrmlive.com/");                                                                    
+
+		driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().window().maximize();
-		
+
 		driver.navigate().refresh();
 		WebElement userName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
 		userName.sendKeys("Admin");
-		
-		//driver.findElement(By.name("username")).sendKeys("Admin");
-		
+
+		// driver.findElement(By.name("username")).sendKeys("Admin");
+
 		WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
 		password.sendKeys("admin123");
-		
-		//driver.findElement(By.name("password")).sendKeys("admin123");
-		
+
+		// driver.findElement(By.name("password")).sendKeys("admin123");
+
 		driver.close();
 
 	}

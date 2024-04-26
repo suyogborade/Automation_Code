@@ -11,23 +11,21 @@ import org.openqa.selenium.WebElement;
 public class Locators {
 
 	public static void main(String[] args) {
-		
-		 WebDriver driver = new SafariDriver();
-		 
-		 driver.get("https://www.automationexercise.com/");
-		 driver.manage().window().maximize();
-		
-		 List<WebElement> img= driver.findElements(By.tagName("img"));
-		 
+
+		WebDriver driver = new SafariDriver();
+
+		driver.get("https://www.automationexercise.com/");
+		driver.manage().window().maximize();
+
+		List<WebElement> img = driver.findElements(By.tagName("img"));
+
 		System.out.println("Number of Images on the Page : " + img.size());
-		
-		
-		 List<WebElement> links =   driver.findElements(By.tagName("a"));
-		 
-		 System.out.println("Number of Links : " + links.size());
-		
+
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+
+		System.out.println("Number of Links : " + links.size());
+
 		driver.quit();
-		
 
 	}
 

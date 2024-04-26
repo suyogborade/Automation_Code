@@ -61,7 +61,7 @@ public class DatePicker {
 		}
 		
 		
-		driver.close();
+		//driver.close();
 	}
 
 }

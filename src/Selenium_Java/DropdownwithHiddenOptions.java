@@ -31,6 +31,10 @@ public class DropdownwithHiddenOptions {
 	
 		for(WebElement op : options) 
 		{
+			if(op.getText().equals("QA Engineer")) {
+				op.click();
+				break;
+			}
 			System.out.println(op.getText());
 		}
 	

@@ -18,34 +18,33 @@ public class HandleDropdownWithSelectTag {
 
 		driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/");
 		driver.manage().window().maximize();
-	
-		WebElement drpcuntry =driver.findElement(By.xpath("(//select)[1]"));
-		
+
+		WebElement drpcuntry = driver.findElement(By.xpath("(//select)[1]"));
+
 		Select drpselect = new Select(drpcuntry);
-		
-		//Selecting value from dropdown
+
+		// Selecting value from dropdown
 		drpselect.selectByVisibleText("India");
 		drpselect.selectByIndex(3);
-	
-		//Find Total options from the Dropdown
-		List<WebElement> Options =drpselect.getOptions();
+
+		// Find Total options from the Dropdown
+		List<WebElement> Options = drpselect.getOptions();
 		System.out.println("Total no. of Options: " + Options.size());
-		
-		//Print Options in Console Window
-		
+
+		// Print Options in Console Window
+
 //		for(int i=0; i<Options.size(); i++) {
 //			
 //		System.out.println(Options.get(i).getText());
 //			
 //		}
-		
-		for(WebElement drop:Options) {
+
+		for (WebElement drop : Options) {
 			System.out.println(drop.getText());
 		}
-		
+
 		driver.close();
-		
-		
+
 	}
 
 }
