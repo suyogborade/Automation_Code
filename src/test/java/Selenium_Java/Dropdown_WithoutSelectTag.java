@@ -17,22 +17,22 @@ public class Dropdown_WithoutSelectTag {
 
 		driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
 		driver.manage().window().maximize();
-
-		// clicking on the dropdown
+	
+		//clicking on the dropdown
 		driver.findElement(By.xpath("//button[@type='button']")).click();
-
-		List<WebElement> options = driver.findElements(By.xpath("//ul[contains(@class,'multiselect')]//label"));
-
-		System.out.println("Total Number of Options :" + options.size());
-
-		// print all the dropdown
-		for (int i = 0; i < options.size(); i++) {
+		
+		List<WebElement> options= driver.findElements(By.xpath("//ul[contains(@class,'multiselect')]//label"));
+		
+		System.out.println("Total Number of Options :"+ options.size());
+		
+		//print all the dropdown
+		for(int i=0; i<options.size(); i++) {
 			System.out.println(options.get(i).getText());
 		}
-
+		
 		System.out.println("-----------------------------");
-
-		for (WebElement drop : options) {
+		
+		for(WebElement drop:options) {
 			System.out.println(drop.getText());
 		}
 	}

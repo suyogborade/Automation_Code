@@ -36,28 +36,32 @@ public class DatePicker {
 				break;
 			}
 
-			// driver.findElement(By.xpath("//span[@class='ui-icon
-			// ui-icon-circle-triangle-e']")).click(); //future data
-			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // past date
+			//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); //future data
+			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); //past date
 		}
 
 		List<WebElement> alldate = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//td"));
 
-		/*
-		 * for (WebElement dt : alldate) { if (dt.getText().equals(date)) { dt.click();
-		 * break; }
-		 * 
-		 * }
-		 */
+	/*	for (WebElement dt : alldate) {
+			if (dt.getText().equals(date)) 
+			{
+				dt.click();
+				break;
+			}
 
-		for (int i = 0; i < alldate.size(); i++) {
-			if (alldate.get(i).getText().equals(date)) {
+		}       */
+		
+		for(int i=0; i<alldate.size(); i++)
+		{
+			if(alldate.get(i).getText().equals(date))
+			{
 				alldate.get(i).click();
 				break;
 			}
 		}
-
-		// driver.close();
+		
+		
+		//driver.close();
 	}
 
 }

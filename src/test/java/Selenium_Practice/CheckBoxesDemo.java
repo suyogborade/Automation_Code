@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.safari.SafariDriver;
 
+
 public class CheckBoxesDemo {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -18,22 +19,25 @@ public class CheckBoxesDemo {
 
 		driver.get("https://demo.automationtesting.in/Register.html");
 		driver.manage().window().maximize();
+		
 
 		List<WebElement> drp = driver.findElements(By.xpath("//input[@type='checkbox']"));
 
-		for (int i = 1; i < drp.size(); i++) {
-			drp.get(i).click();
-
+		for(int i=1; i<drp.size(); i++)
+		{ drp.get(i).click();
+		
 		}
-
+		
 		Thread.sleep(5000);
-
-		for (WebElement sel : drp) {
+		
+		for(WebElement sel:drp) {
 			if (sel.isSelected()) {
 				sel.click();
-			}
+				}
+		}
+		
 		}
 
 	}
 
-}
+
