@@ -7,6 +7,13 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -32,14 +39,5 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/suyogborade/.m2/repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/suyogborade/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1.jar" sourcepath="/Users/suyogborade/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-api"/>
-			<attribute name="maven.version" value="4.18.1"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
