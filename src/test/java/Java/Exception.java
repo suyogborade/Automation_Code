@@ -23,7 +23,7 @@ public class Exception {
 		*/
 		
 		//Example 2
-		int a [] = new int [5];
+/*		int a [] = new int [5];
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -40,9 +40,17 @@ public class Exception {
 		System.out.println("Program is Completed ");
 	
 		
+		*/
 		
+		//Example 3
 		
+		String s = "Welcome";
 		
+		int num = Integer.parseInt(s); //NumberFormatException
+		
+		System.out.println(s);
+		
+		System.out.println("Program is Completed");
 		
 	}
 
