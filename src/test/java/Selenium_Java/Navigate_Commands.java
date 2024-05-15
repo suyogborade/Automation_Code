@@ -1,7 +1,7 @@
 package Selenium_Java;
 
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class Navigate_Commands {
 

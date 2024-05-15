@@ -19,7 +19,7 @@ public class HandleException {
 		
 		catch(ArithmeticException e)
 		{
-			System.out.println("You have entered invalid Input ");
+			System.out.println("You have entered invaild");
 		}
 		
 		System.out.println("Program Execution is Completed");

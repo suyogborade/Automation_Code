@@ -1,7 +1,5 @@
 package Java;
 
-import java.util.Scanner;
-
 public class Exception {
 
 	public static void main(String[] args) {
