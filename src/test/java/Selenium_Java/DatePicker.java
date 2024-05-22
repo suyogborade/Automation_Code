@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DatePicker {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://jqueryui.com/datepicker/");
@@ -23,7 +23,7 @@ public class DatePicker {
 		// driver.findElement(By.className("hasDatepicker")).sendKeys("07/17/2024");
 
 		// Approach 2
-		String year = "2019";
+		String year = "2023";
 		String month = "May";
 		String date = "10";
 		driver.findElement(By.xpath("//input[@id='datepicker']")).click();
@@ -56,8 +56,9 @@ public class DatePicker {
 				break;
 			}
 		}
-
-		// driver.close();
+		Thread.sleep(2000);
+		
+		 driver.close();
 	}
 
 }
