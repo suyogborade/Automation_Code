@@ -4,7 +4,10 @@ public class DataConversionMethods {
 
 	public static void main(String[] args) {
 		
+		//Scenario 1
 		//String ----> integer
+		
+		//String to primitive data types are Unboxing
 		
 		String s1 = "100";
 		String s2 = "200";
@@ -39,18 +42,57 @@ public class DataConversionMethods {
 		System.out.println(Boolean.parseBoolean(p));
 		
 		
-		// int , char, double, boolean -----> String
+		//String to char not possible 
+		
+		String s = "A"; 
+	
+		//Scenario 2
+		
+		// int , char, double, boolean -----> String 
+		//primitive to String is Autoboxing
 		
 		int x = 151;
-		char c = 'M';
-		double d = 50.20;
-		boolean bo = true;
+		String s11 = String.valueOf(x);
 		
-		System.out.println(String.valueOf(x));
+		char c = 'M';
+		String s12 = String.valueOf(c);
+		
+		double d = 50.20;
+		String s13 = String.valueOf(d);
+		
+		boolean bo = true;
+		String s14= String.valueOf(bo); 
+		
+		System.out.println(s11);
+		System.out.println(s12);
+		System.out.println(s13);
+		System.out.println(s14);
+		
+		System.out.println();
+		
+	/*	System.out.println(String.valueOf(x));
 		System.out.println(String.valueOf(c));
 		System.out.println(String.valueOf(d));
-		System.out.println(String.valueOf(bo));
+		System.out.println(String.valueOf(bo));  */
+		
+		//Scenario 3
+		// int --- double
+		
+		int l =10;
+		double m = l;
+		System.out.println(m);
+		
+		//double --- int
+		
+		double d1 = 10.50;
+		int e = (int)d1; //typecasting is used convert into int 
+		
+		System.out.println(e);
+		
+		
 
+		
+		
 	}
 
 }
