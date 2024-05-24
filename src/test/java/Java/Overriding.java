@@ -1,21 +1,27 @@
 package Java;
 
-class Bank {
-	double roi() {
+class Bank
+{
+	double roi()
+	{
 		return 0.0;
 	}
 }
 
-class AxisBank extends Bank {
+class AxisBank extends Bank 
+{
 
-	double axis() {
+	double axis() 
+	{
 		return 10.5;
 	}
 
 }
 
-class YesBank extends Bank {
-	double Yes() {
+class YesBank extends Bank
+{
+	double Yes()
+	{
 		return 12.5;
 	}
 }
