@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium_Practice.Conscent_Login">
+      <class name="TestNG.HardVsSoftAssertions">
         <methods>
-          <include name="contentClick"/>
+          <include name="SoftAssertion"/>
         </methods>
-      </class> <!-- Selenium_Practice.Conscent_Login -->
+      </class> <!-- TestNG.HardVsSoftAssertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
