@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  TestChrome</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>TestChrome</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 26 23:44:59 IST 2024</td>
+<td>Started on:</td><td>Mon May 27 00:10:39 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37975 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19122 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,8 +79,12 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: OrangeHRM expected:&lt;OrangeHRM&gt; but was:&lt;Title not Same&gt;
 	at TestNG.ParamTest.testhomepagelogo(ParamTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1627496281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1627496281'><pre>java.lang.AssertionError: OrangeHRM expected:&lt;OrangeHRM&gt; but was:&lt;Title not Same&gt;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1324222624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324222624'><pre>java.lang.AssertionError: OrangeHRM expected:&lt;OrangeHRM&gt; but was:&lt;Title not Same&gt;
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
 	at TestNG.ParamTest.testhomepagelogo(ParamTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -99,18 +103,13 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 </pre></div></td>
 <td>0</td>
 <td>TestNG.ParamTest@17497425</td></tr>
@@ -125,7 +124,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='TestNG.ParamTest.testlogo()'><b>testlogo</b><br>Test class: TestNG.ParamTest</td>
 <td></td>
-<td>7</td>
+<td>0</td>
 <td>TestNG.ParamTest@17497425</td></tr>
 </table><p>
 </body>

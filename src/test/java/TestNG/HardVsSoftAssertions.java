@@ -15,7 +15,7 @@ public class HardVsSoftAssertions {
 		System.out.println("Testing ......");
 		
 		
-		Assert.assertEquals(1, 2); //if it will below statement will not executed
+		Assert.assertEquals(1, 2); //if it fails then below statement will not executed
 		
 		System.out.println("Hard Assertion Completed");
 		
