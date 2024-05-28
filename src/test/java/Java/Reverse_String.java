@@ -4,15 +4,20 @@ public class Reverse_String {
 
 	public static void main(String[] args) {
 
-		String text = "Selenium Testing a Open Source Tool";
+		String s = "Selenium Testing a Open Source Tool";
 
-		System.out.println(text.length());
+		System.out.println(s.length());
 
-		for (int i = text.length() - 1; i >= 0; i--) {
-			System.out.print(text.charAt(i));
+		for (int i = s.length() - 1; i >= 0; i--) {
+			System.out.print(s.charAt(i));
 		}
 
 		System.out.println();
 	}
+	
+	
+
+	
+
 
 }
