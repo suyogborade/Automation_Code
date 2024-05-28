@@ -1,4 +1,4 @@
-package TestNG.Listener;
+package TestNGListener;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
@@ -8,14 +8,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class NopCommerceExtendsReport {
+
+//@Listeners(TestNGListener.ExtentReportManager.class)
+public class NopCommerceExtentsReport {
 
 	WebDriver driver;
 	
-	@BeforeTest
+	@BeforeClass
 	void setup()
 	{
 		driver = new ChromeDriver();

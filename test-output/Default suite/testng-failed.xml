@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.Listener.NopCommerceExtendsReport">
+      <class name="TestNGListener.NopCommerceExtendsReport">
         <methods>
-          <include name="testlogin"/>
           <include name="setup"/>
+          <include name="testlogin"/>
           <include name="logout"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- TestNG.Listener.NopCommerceExtendsReport -->
+      </class> <!-- TestNGListener.NopCommerceExtendsReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
