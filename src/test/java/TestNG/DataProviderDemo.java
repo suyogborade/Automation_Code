@@ -38,16 +38,16 @@ public class DataProviderDemo {
 		driver.close();
 	}
 	
-	@DataProvider(name ="dp", indices= {0,2})
+	@DataProvider(name ="dp") //indices= {0,2})
 	String [] [] loginData()
 	{
 		String data [] [] = 
 			{
 					{"suyogborade@yahoo.in", "Pass@123"},
 					{"suyog@outlook.ai", "abc@123"},
-					{"suyog@gmail.com","demo@123"},
+					{"suyog1@gmail.com","demo@123"},
 					{"selenium@java.com", "automation123"},
-					{"suyog@gmail.com","demo@123"}
+					{"suyog1@gmail.com","demo@123"}
 		};
 		return data;
 	}
