@@ -20,9 +20,16 @@ public class KeyboardActions {
 		Actions act = new Actions(driver);
 		
 		// clt + a
-		act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL);
+		act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
 		
+		// clt + c
+		act.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).perform();
 		
+		//Tab key
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		
+		//clt + v 
+		act.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).perform(); 		
 		
 	}
 

@@ -39,9 +39,9 @@ public class DataProviderDemo {
 	}
 	
 	@DataProvider(name ="dp") //indices= {0,2})
-	String [] [] loginData()
+	Object [] [] loginData()
 	{
-		String data [] [] = 
+		Object data [] [] = 
 			{
 					{"suyogborade@yahoo.in", "Pass@123"},
 					{"suyog@outlook.ai", "abc@123"},
