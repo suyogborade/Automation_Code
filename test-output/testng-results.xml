@@ -1,41 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-05T19:50:21 IST" name="Suite" finished-at="2024-06-05T19:50:40 IST" duration-ms="18450">
+  <suite started-at="2024-06-24T15:00:09 IST" name="Default suite" finished-at="2024-06-24T15:00:09 IST" duration-ms="90">
     <groups>
     </groups>
-    <test started-at="2024-06-05T19:50:21 IST" name="Test" finished-at="2024-06-05T19:50:40 IST" duration-ms="18450">
-      <class name="TestNG.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestNG.ParamTest@1de5f259]" started-at="2024-06-05T19:50:21 IST" name="setup" finished-at="2024-06-05T19:50:36 IST" duration-ms="14558" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-06-24T15:00:09 IST" name="Default test" finished-at="2024-06-24T15:00:09 IST" duration-ms="90">
+      <class name="TestNG.InvocaTionCount">
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testhomepagelogo()[pri:0, instance:TestNG.ParamTest@1de5f259]" started-at="2024-06-05T19:50:36 IST" name="testhomepagelogo" finished-at="2024-06-05T19:50:36 IST" duration-ms="45" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testhomepagelogo -->
-        <test-method signature="testlogo()[pri:1, instance:TestNG.ParamTest@1de5f259]" started-at="2024-06-05T19:50:36 IST" name="testlogo" finished-at="2024-06-05T19:50:40 IST" duration-ms="3697" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlogo -->
-        <test-method is-config="true" signature="closeapp()[pri:0, instance:TestNG.ParamTest@1de5f259]" started-at="2024-06-05T19:50:40 IST" name="closeapp" finished-at="2024-06-05T19:50:40 IST" duration-ms="108" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeapp -->
-      </class> <!-- TestNG.ParamTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:TestNG.InvocaTionCount@71def8f8]" started-at="2024-06-24T15:00:09 IST" name="test" finished-at="2024-06-24T15:00:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- TestNG.InvocaTionCount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
