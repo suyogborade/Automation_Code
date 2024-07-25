@@ -2,35 +2,38 @@ package JavaPrograms;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAdjusters;
+import java.util.Locale;
 
 public class Days {
 
 	public static void main(String[] args) {
 		
-		 Month month = Month.JUNE;
-	        int year = 2024; // You can change the year as needed
-
-	        // Start with the first day of the month
-	        LocalDate date = LocalDate.of(year, month, 1);
-
-	        // Loop through the days in June
-	        int workingDaysCount = 0;
-	        while (date.getMonth() == month) {
-	            // Check if it's a working day (Monday to Friday)
-	            if (date.getDayOfWeek() != DayOfWeek.SATURDAY && date.getDayOfWeek() != DayOfWeek.SUNDAY) {
-	                // Print the date if it's a working day
-	                System.out.println(date);
-	                workingDaysCount++;
-	            }
-	            // Move to the next day
-	            date = date.plusDays(1);
-	            
-	            // Stop after printing 5 working days
-	            if (workingDaysCount == 5) {
-	                break;
-	            }
-	        }
-
+		int year = 2024;
+        int month = 7; // June
+        
+        // Create a LocalDate for the first day of the specified month
+        LocalDate startDate = LocalDate.of(year, month, 1);
+        
+        // Find the last day of the month
+        LocalDate endDate = startDate.with(TemporalAdjusters.lastDayOfMonth());
+        
+        // Initialize DateTimeFormatter for the desired format
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        
+        // Iterate through each day of the month
+        LocalDate currentDate = startDate;
+        while (currentDate.isBefore(endDate.plusDays(1))) {
+            // Check if the current day is a working day (Monday to Friday)
+            if (currentDate.getDayOfWeek() != DayOfWeek.SATURDAY && currentDate.getDayOfWeek() != DayOfWeek.SUNDAY) {
+                // Print date in the required format
+                System.out.println(currentDate.format(formatter));
+            }
+            
+            // Move to the next day
+            currentDate = currentDate.plusDays(1);
+        }
 	}
 
 }
